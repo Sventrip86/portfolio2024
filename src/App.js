@@ -2,7 +2,7 @@ import './App.css';
 import Nav from './components/Nav';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {  yellow } from '@mui/material/colors';
-import Home from './components/Home';
+import Intro from './components/Intro';
 
 
 const theme = createTheme({
@@ -19,7 +19,7 @@ const App = () => {
     <>
      <ThemeProvider theme={theme}>
 <Nav></Nav>
-<Home/>
+<Intro/>
 </ThemeProvider>
     </>
   )
