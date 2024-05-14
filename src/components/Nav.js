@@ -10,8 +10,9 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
+import './Nav.css'
+import { Link } from 'react-router-dom';
 
 
 const Nav = () => {
@@ -20,7 +21,14 @@ const Nav = () => {
 
     const drawerWidth = 240;
 
-    const navItems = ['Home', 'About', 'Portfolio', 'Blog', 'Contact'];
+    const navItems = [
+        { name: 'Home', path: '/' },
+        { name: 'About', path: '/about' },
+        { name: 'Portfolio', path: '/portfolio' },
+        { name: 'Blog', path: '/blog' },
+        { name: 'Contact', path: '/contact' },
+];
+
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
@@ -34,9 +42,9 @@ const Nav = () => {
           <Divider />
           <List>
             {navItems.map((item) => (
-              <ListItem key={item} disablePadding>
+              <ListItem key={item.name} disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
-                  <ListItemText primary={item} />
+                  <ListItemText primary={item.name}  />
                 </ListItemButton>
               </ListItem>
             ))}
@@ -46,7 +54,7 @@ const Nav = () => {
 
 
   return (
-    <div>  
+    <div className='nav-container'>  
         <AppBar component="nav" color="primary">
     <Toolbar>
       <IconButton
@@ -67,9 +75,9 @@ const Nav = () => {
       </Typography>
       <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
         {navItems.map((item) => (
-          <Button key={item} size='large'  sx={{ color: 'black' }}>
-            {item}
-          </Button>
+          <Link key={item.name} to={item.path} className="nav-link">
+            {item.name}
+          </Link>
         ))}
       </Box>
     </Toolbar>

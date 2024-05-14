@@ -2,8 +2,9 @@ import './App.css';
 import Nav from './components/Nav';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {  yellow } from '@mui/material/colors';
-import Intro from './components/Intro';
-
+import { Outlet, Route, Routes, Link } from 'react-router-dom';
+import About from './components/About';
+import Home from './components/Home';
 
 const theme = createTheme({
   palette: {
@@ -18,11 +19,18 @@ const App = () => {
   return (
     <>
      <ThemeProvider theme={theme}>
-<Nav></Nav>
-<Intro/>
+<Nav/>
+<Routes>
+
+<Route path='/' element={<Outlet/>} />
+  <Route index element={<Home/>} />  
+  <Route path='about' element={<About/>} />
+
+</Routes>
+
 </ThemeProvider>
     </>
-  )
-}
+  );
+};
 
 export default App;
