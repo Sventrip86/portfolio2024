@@ -13,6 +13,7 @@ import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
 import './Nav.css'
 import { Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 
 const Nav = () => {
@@ -35,6 +36,7 @@ const Nav = () => {
       };
 
       const drawer = (
+        <Container>
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
           <Typography variant="h6" sx={{ my: 2 }}>
             Fabs.
@@ -50,6 +52,7 @@ const Nav = () => {
             ))}
           </List>
         </Box>
+        </Container>
       );
 
 
