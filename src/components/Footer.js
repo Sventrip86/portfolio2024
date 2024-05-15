@@ -4,6 +4,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 
+
+
 const Footer = () => {
   return (
     <Box 
@@ -17,8 +19,8 @@ const Footer = () => {
   >
     <Grid container spacing={2} justifyContent="space-between" alignItems="center">
       <Grid item xs={12} sm={4}>
-        <Typography variant="h6">
-          This is the footer
+        <Typography variant="subtitle2" sx={{fontFamily: 'poppins'}}>
+        Made with ❤️ + ☕ and a lot of code.
         </Typography>
       </Grid>
       <Grid item xs={12} sm={4}>

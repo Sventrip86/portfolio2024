@@ -15,6 +15,12 @@ const theme = createTheme({
     },
     secondary: yellow,
   },
+  typography: {
+    fontFamily: [
+      'Poppins'
+    ]
+  }
+  
 });
 
 const App = () => {
