@@ -1,38 +1,19 @@
 import "./App.css";
 import Nav from "./components/Nav";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { yellow } from "@mui/material/colors";
+
 import { Outlet, Route, Routes, Link } from "react-router-dom";
 import About from "./components/About";
 import Home from "./components/Home";
 import { Box } from "@mui/material";
 import Footer from "./components/Footer";
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#FFEE59",
-    },
-    secondary: yellow,
-  },
-  typography: {
-    fontFamily: [
-      'Poppins'
-    ]
-  }
-  
-});
-
-
-
-
+import ColorModeProvider from "./ColorModeContext";
 
 
 
 const App = () => {
   return (
     <>
-      <ThemeProvider theme={theme}>
+    <ColorModeProvider>
         <Box
           sx={{
             display: "flex",
@@ -56,7 +37,7 @@ const App = () => {
           </Box>
           <Footer/>
         </Box>
-      </ThemeProvider>
+        </ColorModeProvider>
     </>
   );
 };
