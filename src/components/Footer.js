@@ -11,16 +11,16 @@ const Footer = () => {
     <Box 
     component="footer" 
     sx={{ 
-        background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(255,238,89,1) 70%)',
-      py: 3, 
-      px: 2,
+      background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(255,238,89,1) 70%)',
+      py: 2, 
+      px: 3,
       mt: 'auto'
     }}
   >
-    <Grid container spacing={2} justifyContent="space-between" alignItems="center">
-      <Grid item xs={12} sm={4}>
-        <Typography variant="subtitle2" sx={{fontFamily: 'poppins'}}>
-        Made with ❤️ + ☕ and a lot of code.
+    <Grid container spacing={3} justifyContent="space-between" alignItems="center">
+      <Grid item xs={12} sm={4} >
+        <Typography variant="body2" sx={{fontFamily: 'poppins'}}>
+        Made with ❤️ + ☕ and a lot of JSX.
         </Typography>
       </Grid>
       <Grid item xs={12} sm={4}>
