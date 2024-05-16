@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
@@ -14,11 +14,18 @@ import MenuIcon from '@mui/icons-material/Menu';
 import './Nav.css'
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
+import { useContext } from 'react';
+import { ColorModeContext} from '../ColorModeContext'
+import { Button } from '@mui/material';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 const Nav = () => {
 
     const [mobileOpen, setMobileOpen] = React.useState(false);
+    const { mode, toggleMode } = useContext(ColorModeContext);
 
     const drawerWidth = 240;
 
@@ -50,7 +57,7 @@ const Nav = () => {
                 </ListItemButton>
               </ListItem>
             ))}
-          </List>
+          </List>      
         </Box>
         </Container>
       );
@@ -83,6 +90,14 @@ const Nav = () => {
           </Link>
         ))}
       </Box>
+      {/* switch to change dark or light mode */}
+
+      {mode === 'light' ? <IconButton aria-label='light'><WbSunnyIcon onClick={toggleMode}/></IconButton> : <IconButton onClick={toggleMode} aria-label='light'><DarkModeIcon/></IconButton>}
+{/* 
+      <Button onClick={toggleMode} variant="contained">
+            {mode === 'light' ? 'Dark Mode' : 'Light Mode'}
+          </Button> */}
+          <IconButton aria-label='light' sx={{ml: 3}}><GitHubIcon/></IconButton>
     </Toolbar>
   </AppBar>
   <nav>

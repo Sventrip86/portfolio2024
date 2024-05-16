@@ -6,7 +6,7 @@ import About from "./components/About";
 import Home from "./components/Home";
 import { Box } from "@mui/material";
 import Footer from "./components/Footer";
-import ColorModeProvider from "./ColorModeContext";
+import {ColorModeProvider} from "./ColorModeContext";
 
 
 

@@ -46,5 +46,5 @@ const ColorModeProvider = ({children}) =>{
 
 }
 
-export default ColorModeProvider
+export { ColorModeContext, ColorModeProvider };
 
