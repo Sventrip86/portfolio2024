@@ -25,6 +25,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 const Nav = () => {
 
     const [mobileOpen, setMobileOpen] = React.useState(false);
+
     const { mode, toggleMode } = useContext(ColorModeContext);
 
     const drawerWidth = 240;

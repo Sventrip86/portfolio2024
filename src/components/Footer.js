@@ -1,25 +1,32 @@
-import { Box, Typography, Grid, IconButton } from '@mui/material'
-import React from 'react'
+import { Box, Typography, Grid, IconButton, useTheme  } from '@mui/material'
+import React, {useContext} from 'react'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
+import { ColorModeContext } from '../ColorModeContext';
 
 
 
 const Footer = () => {
+  const theme = useTheme();
+
+  const {mode} = useContext(ColorModeContext)
   return (
     <Box 
     component="footer" 
     sx={{ 
-      background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(255,238,89,1) 70%)',
+      background: mode === 'light'
+          ? 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(255,238,89,1) 70%)'
+          : 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(40,40,40,1) 70%)',
       py: 2, 
       px: 3,
-      mt: 'auto'
+      mt: 'auto',
+      color: theme.palette.text.primary 
     }}
   >
     <Grid container spacing={3} justifyContent="space-between" alignItems="center">
       <Grid item xs={12} sm={4} >
-        <Typography variant="body2" sx={{fontFamily: 'poppins'}}>
+        <Typography variant="body2" color="inherit">
         Made with ❤️ + ☕ and a lot of JSX.
         </Typography>
       </Grid>
