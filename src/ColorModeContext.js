@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react"
+import { createContext,  useState } from "react"
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { yellow } from "@mui/material/colors";
 
@@ -23,11 +23,11 @@ const ColorModeProvider = ({children}) =>{
       const theme = createTheme({
         palette: {
           mode,
-          primary: {
-            main: "#FFEE59",
+            primary: yellow,
+            secondary: {
+              main: '#607d8b',
+            },
           },
-          secondary: yellow,
-        },
         typography: {
           fontFamily: [
             'Poppins'

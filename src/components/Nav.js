@@ -35,7 +35,7 @@ const Nav = () => {
         { name: 'About', path: '/about' },
         { name: 'Portfolio', path: '/portfolio' },
         { name: 'Blog', path: '/blog' },
-        { name: 'Contact', path: '/contact' },
+        { name: 'Contact me', path: '/contact' },
 ];
 
 
@@ -54,7 +54,11 @@ const Nav = () => {
             {navItems.map((item) => (
               <ListItem key={item.name} disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
-                  <ListItemText primary={item.name}  />
+                  <ListItemText primary={item.name}  sx={{
+                  fontSize: 30,
+                  fontWeight: 'medium',
+                  letterSpacing: 0,
+                }}  />
                 </ListItemButton>
               </ListItem>
             ))}

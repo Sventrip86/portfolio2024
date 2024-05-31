@@ -15,8 +15,8 @@ const Intro = () => {
     <Paper>
       <Box
         sx={{
-          p: { xs: 3, md: 5 },
-          pr: { md: 0 },
+          p: 4, 
+          mb: 2
         }}
       >
         <Typography component="h1" variant="h3" color="inherit" gutterBottom>

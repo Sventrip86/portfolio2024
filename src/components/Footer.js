@@ -8,6 +8,7 @@ import { ColorModeContext } from '../ColorModeContext';
 
 
 const Footer = () => {
+  //imported theme
   const theme = useTheme();
 
   const {mode} = useContext(ColorModeContext)
@@ -17,7 +18,7 @@ const Footer = () => {
     sx={{ 
       background: mode === 'light'
           ? 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(255,238,89,1) 70%)'
-          : 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(40,40,40,1) 70%)',
+          : 'black',
       py: 2, 
       px: 3,
       mt: 'auto',

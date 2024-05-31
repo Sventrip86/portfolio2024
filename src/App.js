@@ -19,6 +19,9 @@ const App = () => {
             display: "flex",
             flexDirection: "column",
             minHeight: "100vh",
+            height: "100vh",
+            alignContent: 'stretch '
+            
           }}
         >
           <Nav />
@@ -27,6 +30,8 @@ const App = () => {
             sx={{
               flexGrow: 1,
               paddingTop: "64px", // Adjust this value if your AppBar height is different
+              overflowY: "auto",
+              
             }}
           >
             <Routes>
