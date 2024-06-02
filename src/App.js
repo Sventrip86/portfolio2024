@@ -29,7 +29,7 @@ const App = () => {
             component="main"
             sx={{
               flexGrow: 1,
-              paddingTop: "64px", // Adjust this value if your AppBar height is different
+              paddingTop: "30px", // Adjust this value if your AppBar height is different
               overflowY: "auto",
               
             }}

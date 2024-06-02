@@ -20,7 +20,7 @@ const Intro = () => {
         }}
       >
         <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-          <WavingHandOutlinedIcon sx={{ fontSize: "40px" }} /> Hi I'm Fabs,
+          <WavingHandOutlinedIcon sx={{ fontSize: "35px" }} /> Hi I'm Fabs,
         </Typography>
         <Typography variant="h6" color="inherit" paragraph>
           I've been in love with IT since I can remember and have always
