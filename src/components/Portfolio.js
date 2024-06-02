@@ -27,8 +27,7 @@ const Portfolio = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          
-          
+
         }}
       >
           <Card sx={{ maxWidth: 445, background: '', }}>
