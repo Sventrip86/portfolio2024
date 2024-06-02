@@ -1,4 +1,4 @@
-const projectData = [
+const projectsData = [
     {
       id: 1,
       title: "La Casa Del Mastro",
@@ -65,3 +65,4 @@ const projectData = [
   ];
 
   
+export default projectsData
