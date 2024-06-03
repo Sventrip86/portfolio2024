@@ -12,7 +12,6 @@ const Intro = () => {
   const [moreInfo, setMoreInfo] = useState(false);
 
   return (
-    <Paper>
       <Box
         sx={{
           p: 4, 
@@ -32,7 +31,6 @@ const Intro = () => {
           {moreInfo ? "Show less" : "Read more"}
         </Button>
       </Box>
-    </Paper>
   );
 };
 

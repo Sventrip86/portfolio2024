@@ -9,16 +9,17 @@ const Home = () => {
   return (
     <Container maxWidth="xl">
       <Grid container spacing={5}>
-        <Grid item lg={8}>
-          <Intro />{" "}
-          <Portfolio />
+        <Grid item xl={6} lg={8} xs={12}>
+          <Intro />
         </Grid>
-        <Grid item lg={4}>
+        <Grid item xl={6} lg={4}>
           <Profile />
         </Grid>
-        <Grid item lg={5}>
+        <Grid item  xs={12}>
           
+          <Portfolio />
         </Grid>
+ 
       
       </Grid>
     </Container>

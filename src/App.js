@@ -18,9 +18,8 @@ const App = () => {
           sx={{
             display: "flex",
             flexDirection: "column",
-            minHeight: "100vh",
             height: "100vh",
-            alignContent: 'stretch '
+            
             
           }}
         >
@@ -29,7 +28,7 @@ const App = () => {
             component="main"
             sx={{
               flexGrow: 1,
-              paddingTop: "30px", // Adjust this value if your AppBar height is different
+              paddingTop: "30px",
               overflowY: "auto",
               
             }}

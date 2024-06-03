@@ -97,7 +97,7 @@ const Nav = () => {
       </Box>
       {/* switch to change dark or light mode */}
 
-      {mode === 'light' ? <IconButton aria-label='light'><WbSunnyIcon onClick={toggleMode}/></IconButton> : <IconButton onClick={toggleMode} aria-label='light'><DarkModeIcon/></IconButton>}
+      {mode === 'light' ? <IconButton onClick={toggleMode} aria-label='light'><WbSunnyIcon /></IconButton> : <IconButton onClick={toggleMode} aria-label='light'><DarkModeIcon/></IconButton>}
 {/* 
       <Button onClick={toggleMode} variant="contained">
             {mode === 'light' ? 'Dark Mode' : 'Light Mode'}
