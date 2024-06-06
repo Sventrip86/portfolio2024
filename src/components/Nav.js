@@ -32,10 +32,8 @@ const Nav = () => {
 
     const navItems = [
         { name: 'Home', path: '/' },
-        { name: 'About', path: '/about' },
-        { name: 'Portfolio', path: '/portfolio' },
-        { name: 'Blog', path: '/blog' },
-        { name: 'Contact me', path: '/contact' },
+        { name: 'Blog', path: 'https://blog.fabriziosebis.com', external: true },
+       
 ];
 
 
@@ -102,7 +100,7 @@ const Nav = () => {
       <Button onClick={toggleMode} variant="contained">
             {mode === 'light' ? 'Dark Mode' : 'Light Mode'}
           </Button> */}
-          <IconButton aria-label='light' sx={{ml: 3}}><GitHubIcon/></IconButton>
+          <IconButton aria-label='GitHub' sx={{ml: 3}}><GitHubIcon/></IconButton>
     </Toolbar>
   </AppBar>
   <nav>

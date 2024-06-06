@@ -37,7 +37,7 @@ const Profile = () => {
           <Avatar
             alt="Fabrizio Sebis"
             src={me}
-            sx={{ width: 150, height: 150, border: "solid 1px" }}
+            sx={{ width: { xs: 100, md: 150 }, height: { xs: 100, md: 150 }, border: "solid 1px" }} 
           />
           <Typography
             variant="h5"
@@ -49,7 +49,7 @@ const Profile = () => {
           </Typography>
           <Typography
             variant="subtitle2"
-            sx={{ textAlign: "center", m: "5px" }}
+            sx={{ textAlign: "center", m: "5px", fontWeight: 500 }} 
           >
             {" "}
             Senior IT Specialist | Tech Blogger | Web Development Enthusiast |

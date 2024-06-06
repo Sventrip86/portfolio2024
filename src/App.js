@@ -19,8 +19,6 @@ const App = () => {
             display: "flex",
             flexDirection: "column",
             height: "100vh",
-            
-            
           }}
         >
           <Nav />

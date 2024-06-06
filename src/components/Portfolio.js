@@ -11,10 +11,12 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import CardHeader from "@mui/material/CardHeader";
 import { Container, Grid } from "@mui/material";
+import { ThemeConsumer } from "react-bootstrap/esm/ThemeProvider";
+import { useTheme } from '@mui/material/styles';
 
 
 const Portfolio = () => {
-
+    const theme = useTheme();
 //   const [projectIndex, setProjectIndex] = useState(0);
 
 //   const handleNext = () => {
@@ -30,21 +32,24 @@ const Portfolio = () => {
 //   const currentProject = projectsData[projectIndex];
 
   return (
+    
     // <Paper sx={{background:'#F9F9F7'}}>
     <>
 
-    <Typography variant="h3" gutterBottom sx={{color: 'black', textAlign: 'center', textDecoration: 'underline'}}>Projects</Typography>
+    <Typography variant="h3" gutterBottom sx={{color: 'black', textAlign: 'center', textDecoration: 'none'}}>Projects</Typography>
     <Box sx={{ p: 4 }}>
       
       <Grid container>
         {projectsData.map( (project) => (
                  <Grid item key={project.id} xs={12} sm={6} md={4}>
+                   
 
              <Card
             key={project.id}
       sx={{ maxWidth: 450, background: '', m: 1 }}
           >
-            <CardHeader title={project.title}  sx={{ background: '#ffeb3b' }}/>
+            <CardHeader title={project.title}  sx={{ bgcolor: theme.palette.background.paper, 
+                  color: theme.palette.text.primary }}/>
             <CardMedia
               component="img"
               alt={project.title}
