@@ -14,7 +14,7 @@ const App = () => {
   return (
     <>
     <ColorModeProvider>
-        <Box
+    <Box
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -26,8 +26,9 @@ const App = () => {
             component="main"
             sx={{
               flexGrow: 1,
-              paddingTop: "30px",
-              overflowY: "auto",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
               
             }}
           >
@@ -37,7 +38,7 @@ const App = () => {
               <Route path="about" element={<About />} />
             </Routes>
           </Box>
-          <Footer/>
+          <Footer sx={{ mt: "auto" }}/>
         </Box>
         </ColorModeProvider>
     </>

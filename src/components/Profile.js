@@ -15,8 +15,11 @@ import AlbumIcon from "@mui/icons-material/Album";
 import WineBarIcon from '@mui/icons-material/WineBar';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
-
+import MailIcon from '@mui/icons-material/Mail';
 import Button from "@mui/material/Button";
+import DownloadIcon from '@mui/icons-material/Download';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import CreateIcon from '@mui/icons-material/Create';
 
 const Profile = () => {
   return (
@@ -52,38 +55,59 @@ const Profile = () => {
             sx={{ textAlign: "center", m: "5px", fontWeight: 500 }} 
           >
             {" "}
-            Senior IT Specialist | Tech Blogger | Web Development Enthusiast |
+            Senior IT Support | Tech Blogger | Web Development Enthusiast |
             Longtime Cybersecurity Lover | Open to New Opportunities
           </Typography>
 
           <Box sx={{ display: 'flex', alignItems: 'center', color: '#808080', mb: 2 }}>
           <LocationOnOutlinedIcon sx={{ mr: 1 }} />
-          <Typography variant="body2">Cagliari</Typography>
+          <Typography variant="body2">Cagliari, Italy</Typography>
           <RecordVoiceOverOutlinedIcon sx={{ mx: 1 }} />
           <Typography variant="body2">Italian / English</Typography>
         </Box>
+        <Box sx={{ display: 'flex', alignItems: 'center', color: '#808080', gap:2 }}>
+     
+          <Button
+            variant="contained"
+            color="primary"
+            startIcon={<MailIcon />}
+            href="mailto:info@fabriziosebis.com"
+            sx={{ mb: 2 }}
+          >
+            Contact Me
+          </Button>
+          <Button
+            variant="contained"
+            color="success"
+            startIcon={<DownloadIcon />}
+            href="/path-to-resume.pdf"
+            download
+            sx={{ mb: 2 }}
+          >
+            Download Resume
+          </Button>
+          </Box>
 
-          <Button variant="contained" color="primary" sx={{ mb: 2 }}>
-          Contact Me
-        </Button>
         </Container>
         <Paper
           sx={{
             backgroundColor: "#fffff",
             p: 2,
             borderRadius: "10px",
-            
+            mt: 2
           }}
           elevation={4}
         >
           <Typography variant="h6"
-            color="inherit" sx={{  pb: 1, color: '#808080' }}>INTRESTS</Typography>
-          <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
+            color="inherit" sx={{ pb: 1,  }}>INTRESTS</Typography>
+          <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap" sx={{ justifyContent: 'center' }}>
             <Chip icon={<RollerSkatingIcon/>} label="Roller Skating" variant="outlined"/>
             <Chip icon={<AlbumIcon color="black" />} label="Vinyl" variant="outlined" />
             <Chip icon={<MusicNoteIcon />} label="Live Music" variant="outlined" />
             <Chip icon={<WineBarIcon  color="error"/>} label="Wine" variant="outlined" />
             <Chip icon={<LocalFloristIcon color="success" />} label="Gardening" variant="outlined" />
+            <Chip icon={<AutoStoriesIcon color="black" />} label="Reading" variant="outlined" />
+            <Chip icon={<CreateIcon color="black" />} label="Writing" variant="outlined" />
 
 
           </Stack>

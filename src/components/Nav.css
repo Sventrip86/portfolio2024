@@ -1,18 +1,19 @@
 .nav-link {
-    color: black;
-    margin: 2rem;
-    padding: 1rem;
-    text-decoration: none;
-    font-size: 15px;
-font-weight: 500; 
-letter-spacing: 0;     
-  
-    
-  }
-
-.nav-link:hover{
+  color: #000; 
+  margin: 1rem; 
+  padding: 0.5rem 1rem; 
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500; 
+  letter-spacing: 0.5px; 
+  transition: background-color 0.3s ease, color 0.3s ease, text-decoration 0.3s ease; 
+  border-radius: 10px; 
   background-color: #FFD037;
-  border-radius: 10px;
-  text-decoration: underline;
 }
 
+.nav-link:hover {
+  background-color: #FFD037;
+  color: #000; 
+  text-decoration: underline; 
+  border-radius: 10px; 
+}
