@@ -20,6 +20,7 @@ import Button from "@mui/material/Button";
 import DownloadIcon from '@mui/icons-material/Download';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import CreateIcon from '@mui/icons-material/Create';
+import CV from '../assets/CV_Fabrizio_Sebis24.pdf'
 
 const Profile = () => {
   return (
@@ -80,7 +81,7 @@ const Profile = () => {
             variant="contained"
             color="success"
             startIcon={<DownloadIcon />}
-            href="/path-to-resume.pdf"
+            href={CV}
             download
             sx={{ mb: 2 }}
           >

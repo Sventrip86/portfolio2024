@@ -27,11 +27,11 @@ const Intro = () => {
         </Typography>
         <Collapse in={moreInfo} timeout="auto" unmountOnExit>
           <Typography variant="h6" color="inherit" paragraph>
-          Hi, I'm Fabrizio Sebis, a Senior IT Specialist with a passion for web development, blogging, and cybersecurity. With over a decade of experience in the tech industry, I've refined my skills in various areas, from troubleshooting complex IT issues to developing interactive web applications.          </Typography>
+          I'm  a Senior IT Specialist with a passion for web development, blogging, and cybersecurity. With over a decade of experience in the tech industry, I've refined my skills in various areas, from troubleshooting complex IT issues to developing interactive web applications. </Typography>
           <Typography variant="h6" color="inherit" paragraph>
-          My IT journey started young, driven by my curiosity and a desire to understand how things work. Over the years, I've expanded my expertise and shared my knowledge through tech blogs and collaborative projects.          </Typography>
+          My IT journey started young, driven by my curiosity and a desire to understand how computers work. Over the years, I've expanded my expertise and shared my knowledge through tech blogs and collaborative projects.</Typography>
           <Typography variant="h6" color="inherit" paragraph>
-          When I'm away from the screens, you can find me enjoying live music, exploring on my inline skates, or getting lost in a good book. Based in Cagliari, Italy, I'm always open to new opportunities and collaborations.          </Typography>
+          When I'm away from the monitors, you can find me enjoying live music, exploring on my inline skates, or getting lost in a good book. Based in Cagliari, Italy, I'm always open to new opportunities and collaborations. </Typography>
         </Collapse>
         <Button
           variant="contained"

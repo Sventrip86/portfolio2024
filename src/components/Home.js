@@ -1,6 +1,6 @@
 import React from "react";
 
-import Intro from "./IntroOLD";
+import Intro from "./Intro";
 import Profile from "./Profile";
 import { Container, Grid } from "@mui/material";
 import Portfolio from "./Portfolio";

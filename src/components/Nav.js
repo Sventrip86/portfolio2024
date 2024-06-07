@@ -82,7 +82,7 @@ const Nav = () => {
           <IconButton onClick={toggleMode} aria-label={mode === 'light' ? 'dark mode' : 'light mode'}>
             {mode === 'light' ? <WbSunnyIcon /> : <DarkModeIcon />}
           </IconButton>
-          <IconButton aria-label='GitHub' sx={{ ml: 3 }} href="https://github.com/fabriziosebis" target="_blank" rel="noopener noreferrer">
+          <IconButton aria-label='GitHub' sx={{ ml: 3 }} href="https://github.com/sventrip86" target="_blank" rel="noopener noreferrer">
             <GitHubIcon />
           </IconButton>
         </Toolbar>
